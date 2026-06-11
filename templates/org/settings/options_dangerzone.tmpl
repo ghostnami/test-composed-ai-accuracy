@@ -1,0 +1,21 @@
+// hunk: @@ -47,7 +47,6 @@
+			</ul>
+		</div>
+		<form class="ui form form-fetch-action" action="{{.Link}}/visibility" method="post">
+			<input type="hidden" name="current_visibility" value="{{.CurrentVisibility}}">
+			<div class="tw-flex tw-flex-col tw-gap-3">
+				<label>{{ctx.Locale.Tr "org.settings.visibility"}}</label>
+// hunk: @@ -85,7 +84,6 @@
+			</ul>
+		</div>
+		<form class="ui form form-fetch-action" action="{{.Link}}/rename" method="post">
+			<div class="field">
+				<label>
+					{{ctx.Locale.Tr "org.settings.name_confirm"}}
+// hunk: @@ -124,7 +122,6 @@
+			</ul>
+		</div>
+		<form class="ui form form-fetch-action" action="{{.Link}}/delete" method="post">
+			<div class="field">
+				<label>
+					{{ctx.Locale.Tr "org.settings.name_confirm"}}

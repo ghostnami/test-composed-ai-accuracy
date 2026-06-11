@@ -1,0 +1,21 @@
+// hunk: @@ -6,7 +6,6 @@
+		<div class="ui attached segment">
+			<form class="ui form" action="./edit" method="post">
+				{{template "base/disable_form_autofill"}}
+				<div class="field {{if .Err_UserName}}error{{end}}">
+					<label for="user_name">{{ctx.Locale.Tr "username"}}</label>
+					<input id="user_name" name="user_name" value="{{.User.Name}}" maxlength="40">
+// hunk: @@ -173,7 +172,6 @@
+		</h4>
+		<div class="ui attached segment">
+			<form class="ui form" action="./avatar" method="post" enctype="multipart/form-data">
+				{{if not .DisableGravatar}}
+				<div class="inline field">
+					<div class="ui radio checkbox">
+// hunk: @@ -214,7 +212,6 @@
+	<form class="ui form" method="post" action="./delete">
+		<div class="content">
+			<p>{{ctx.Locale.Tr "settings.delete_account_desc"}}</p>
+			<div class="field">
+				<div class="ui checkbox">
+					<label for="purge">{{ctx.Locale.Tr "admin.users.purge"}}</label>

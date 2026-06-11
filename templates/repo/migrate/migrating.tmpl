@@ -1,0 +1,14 @@
+// hunk: @@ -64,7 +64,6 @@
+			{{end}}
+		</div>
+		<form class="ui form" action="{{.Link}}/settings" method="post">
+			<input type="hidden" name="action" value="delete">
+			<div class="field">
+				<label>
+// hunk: @@ -90,7 +89,6 @@
+		{{ctx.Locale.Tr "repo.migrate.cancel_migrating_title"}}
+	</div>
+	<form action="{{.Link}}/settings/migrate/cancel" method="post">
+		<div class="content">
+			{{ctx.Locale.Tr "repo.migrate.cancel_migrating_confirm"}}
+		</div>

@@ -1,0 +1,7 @@
+// hunk: @@ -11,7 +11,6 @@
+			<p>{{ctx.Locale.Tr "auth.sign_up_tip"}}</p>
+		{{end}}
+		<form class="ui form" action="{{.SignUpLink}}" method="post">
+			{{if or (not .LinkAccountMode) (and .LinkAccountMode .LinkAccountModeRegister)}}
+			{{template "base/alert" .}}
+			{{end}}
