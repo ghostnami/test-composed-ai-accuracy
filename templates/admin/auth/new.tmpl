@@ -1,0 +1,7 @@
+// hunk: @@ -6,7 +6,6 @@
+		<div class="ui attached segment">
+			<form class="ui form" action="{{.Link}}" method="post">
+				{{template "base/disable_form_autofill"}}
+				<!-- Types and name -->
+				<div class="inline required field {{if .Err_Type}}error{{end}}">
+					<label>{{ctx.Locale.Tr "admin.auths.auth_type"}}</label>
