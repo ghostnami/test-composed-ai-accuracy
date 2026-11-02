@@ -1,3 +1,4 @@
+// Security review fixture: never use with real input or production data.
 const { exec } = require('child_process');
 
 // VULNERABLE: Command injection
