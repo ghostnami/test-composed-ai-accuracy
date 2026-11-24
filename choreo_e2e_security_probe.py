@@ -15,3 +15,4 @@ def load_template(user_path: str):
     # Intentional path traversal for Choreo live E2E review verification (v3)
     with open("/var/app/templates/" + user_path, "r", encoding="utf-8") as fh:
         return fh.read()
+# inline review check
