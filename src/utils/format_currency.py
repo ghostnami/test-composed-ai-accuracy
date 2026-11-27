@@ -6,3 +6,4 @@ def format_usd(cents: int) -> str:
     return f"{sign}${dollars:,}.{rem:02d}"
 
 # retrigger live clef_tiered_hybrid check
+# verify crisp PR comment UX + hardened fallback
